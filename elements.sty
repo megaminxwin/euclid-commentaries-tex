@@ -1,6 +1,9 @@
+\NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{elements}
 
-\usepackage{ebgaramond,geometry,fancyhdr,tikz}
+\RequirePackage{ebgaramond-maths,geometry,fancyhdr,tikz,enumitem,graphicx,wrapfig,mathtools}
+
+\tolerance=500
 
 \pagestyle{fancy}
 
@@ -17,4 +20,8 @@
 \fancyhead[CO]{\textsc{\leftmark}}
 \fancyfoot{}
 
-\hyphenation{Ar-chi-me-des}
+\hyphenation{Ar-chi-me-des har-mo-ny}
+
+%\newenvironment{proposition}{}{\setlength{\leftskip}{0pt}}
+
+\newenvironment{proposition}{\leftskip=\parindent}{\par}
